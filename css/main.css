@@ -711,7 +711,6 @@
 	}
 }
 
-/*! CSS Used from: https://www.zenefits.com/wp-content/themes/zenefits-website/dist/css/app.css?ver=1581042292 ; media=all */
 @media all{
 *,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box;}
 svg{overflow:hidden;vertical-align:middle;}
