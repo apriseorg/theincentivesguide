@@ -20,6 +20,13 @@
 			background: linear-gradient(323deg, rgba(27,81,122,1) 0%, rgba(142,190,200,1) 100%);
 			background-attachment: fixed;
 		}
+		div.main-page .introduction {
+			max-width: 60%;
+		}
+		.hero_image img {
+			max-height: 80%;
+			max-width: 60%;
+		}
 		.hero_image {
 			position: absolute;
 			right: 10%;
@@ -280,6 +287,16 @@
 			.site-content {
 				padding-top: 0;
 			}
+			div.main-page .hero_image {
+				max-width: 50%;
+			}
+			div.main-page .introduction {
+				max-width: 55%;
+			}
+			div.main-page .introduction .text {
+				max-width: 100%;
+				margin-top: 32px;
+			}
 		}
 		.site-header-wrapper {
 			position: relative;
@@ -364,6 +381,7 @@
 			}
 		}
 		@media (max-width: 1023.98px) {
+
 			.site-header-wrapper header {
 				position: fixed;
 				top: 0;
@@ -409,22 +427,13 @@
 				-ms-flex-pack: justify;
 				justify-content: space-between;
 			}
+					div.main-page .introduction .text {
+			width: 60%;
 		}
-		@media (max-width: 639.98px) {
-			.site-header-wrapper header {
-				height: 64px!important;
-				background: #fff!important;
-			}
-			.site-header-wrapper header>.container {
-				height: 100%;
-			}
-			.site-header-wrapper header>.container>.row {
-				margin-left: -16px;
-				margin-right: -16px;
-			}
-			.site-header-wrapper header nav.navbar {
-				background: #fff;
-			}
+		.hero_image img {
+			max-height: 80%;
+			max-width: 60%;
+		}
 		}
 		body .site-header-wrapper header {
 			background: #fff;
@@ -455,33 +464,14 @@
 		div.main-page .mobile-hero {
 			display: none;
 		}
-		div.main-page .introduction {
-			min-height: 798px;
-			width: 50%;
-		}
-		@media (max-width: 1439.98px) {
-			div.main-page .introduction {
-				margin-bottom: 40px;
-				width: 50%;
-			}
-			.hero_image {
-				max-width: 50%;
-				right: 0px;
-				top: 80px;
-			}
-			.hero_image img {
-				max-height: 80%;
-				max-width: 100%;
-			}
-		}
+		
 		div.main-page .introduction .text {
 			width: 432px;
-			color: ;
-			margin-top: 100px;
+			margin-top: 50px;
 		}
 		@media (max-width: 1439.98px) {
 			div.main-page .introduction .text {
-				margin-top: 60px;
+				margin-top: 30px;
 			}
 		}
 		div.main-page .introduction .text h1 {
@@ -544,14 +534,6 @@
 		}
 		@media (max-width: 1023.98px) {
 
-			div.main-page .introduction {
-				min-height: 600px;
-				width: 100%;
-			}
-			div.main-page .introduction .text {
-				max-width: calc(50% - 8px);
-				margin-top: 32px;
-			}
 			div.main-page .introduction .text h1 {
 				font-size: 32px;
 				line-height: 1.19;
@@ -591,7 +573,7 @@
 			div.hero_image{
 				display:none;
 			}
-			div.main-page .introduction .text {
+			div.main-page .introduction {
 				max-width: 100%;
 			}
 			div.main-page .mobile-hero {
@@ -630,6 +612,11 @@
 		div.main-page .introduction .text {
 			width: 100%;
 		}
+		.hero_image img {
+			max-height: 80%;
+			max-width: 60%;
+		}
+
 		div.main-page .introduction .text form .fields input {
 			letter-spacing: 0.16px;
 		}
@@ -767,13 +754,47 @@ div.main-page .introduction .text form .fields button{width:156px;height:56px;co
 .Form-fieldGroupIcon{top:15px;left:15px;width:22px;height:22px;}
 }
 }
+.footer {
+	margin-top: 50px;
+}
 .footer ul, li {
 	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
 .footer li, .footer li a {
 	list-style: none;
 	display: inline-block;
-	float: left;
 	font-size: 15px;
-	margin-right: 20px;
+}
+
+
+@media only screen 
+    and (max-device-width: 640px), 
+    only screen and (max-device-width: 667px), 
+    only screen and (max-width: 480px)
+{
+	.site-header-wrapper header nav.navbar {
+		overflow-y: auto;
+		overflow-x: hidden;
+		max-height: 240vh;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+	.site-header-wrapper header nav.navbar .navbar-left img {
+		width: 200px;
+	}
+	div.main-page .hero_image {
+		display: none;
+	}
+	div.main-page .mobile-hero {
+		display: block;
+		margin-top: 50px;
+		margin-bottom: 90px;
+		width: 80%;
+	}
+	div.main-page .introduction {
+		margin-top: 50px;
+		max-width: 100%;
+	}
 }
